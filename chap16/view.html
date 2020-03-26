@@ -1,0 +1,13 @@
+<h1>Guestbook</h1>
+
+<div>
+  {{.Count}} total Signatures - 
+  <a href="/guestbook/new">Add your signature</a>
+</div>
+
+<div>
+  <p>Signatures</p>
+  {{range .Lines}}
+    <p>{{.}}</p>
+  {{end}}
+</div>
